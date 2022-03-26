@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>サンプルページ</h1>
+    <ul>
+        <h1>Hello, {{ name_city }}</h1>
+        {% for bullet in name_bullets %}
+
+        
+        {% if loop.index % 3 != 0 %}
+        <li>
+            {{ bullet, loop.index}}
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</body>
+</html>
